@@ -5,7 +5,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello world!"
+    return """\
+    <html>
+      <head></head>
+      <body>
+        <h2>Hello Russell and friends!</h2>
+        <p>Welcome to the new and improved Bus App. It's already better than the last one.<br>
+        </p>
+      </body>
+    </html>
+    """
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
